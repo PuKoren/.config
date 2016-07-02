@@ -1,0 +1,11 @@
+[credential]
+	helper = cache --timeout=360000
+[user]
+	email = koren@pukogames.com
+	name = Jonathan Muller
+[core]
+	editor = nano
+[push]
+	default = simple
+[branch "master"]
+	mergeoptions = --no-ff
