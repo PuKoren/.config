@@ -35,4 +35,4 @@
 
     # list aliases
     la = "!git config -l | grep alias | cut -c 7-"
-    lg = log --all --date=short --graph --pretty=tformat:'%Cred%h%Creset - %Cgreen%ad%Creset - %Cblue%an%Creset - %s %C(yellow)%d%Creset 8===o'
+    lg = log --all --date=short --graph --pretty=tformat:'%Cred%h%Creset - %Cgreen%ad%Creset - %Cblue%an%Creset - %s %C(yellow)%d%Creset'
