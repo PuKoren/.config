@@ -7,8 +7,6 @@
 	editor = nano
 [push]
 	default = simple
-[branch "master"]
-	mergeoptions = --no-ff
 [ghi]
 	token = !security find-internet-password -a pukoren -s github.com -l 'ghi token' -w
 [alias]
