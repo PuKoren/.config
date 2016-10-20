@@ -1,10 +1,11 @@
 [credential]
 	helper = cache --timeout=360000
 [user]
-	email = koren@pukogames.com
+	email = jmuller@dial-once.com
 	name = Jonathan Muller
+	signingkey = BD34699C96B53B07
 [core]
-	editor = nano
+	editor = vim
 [push]
 	default = simple
 [ghi]
@@ -34,3 +35,14 @@
     # list aliases
     la = "!git config -l | grep alias | cut -c 7-"
     lg = log --all --date=short --graph --pretty=tformat:'%Cred%h%Creset - %Cgreen%ad%Creset - %Cblue%an%Creset - %s %C(yellow)%d%Creset'
+    
+    # Remove already merged branches on master
+    # Thanks to http://stevenharman.net/git-clean-delete-already-merged-branches
+    prune = "git branch --merged | grep -v \\* | xargs -n 1 git branch -d"
+
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg]
+	program = gpg2
