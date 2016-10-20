@@ -19,5 +19,8 @@ alias fipmonde='mplayer http://direct.fipradio.fr/live/fip-webradio4.mp3'
 alias fip='mplayer http://direct.fipradio.fr/live/fip-midfi.mp3'
 alias fiprock='mplayer http://direct.fipradio.fr/live/fip-webradio1.mp3'
 alias underground80='mplayer http://ice1.somafm.com/u80s-128-aac'
+alias metaldetector='mplayer http://ice1.somafm.com/metal-128-aac'
+alias leftcoast='mplayer http://ice1.somafm.com/seventies-128-aac'
+alias deepspaceone='mplayer http://ice1.somafm.com/deepspaceone-128-aac'
 
 cowsay $(fortune)
