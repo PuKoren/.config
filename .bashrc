@@ -18,5 +18,6 @@ alias rfi='mplayer http://rfi-monde-64k.scdn.arkena.com/rfimonde.mp3'
 alias fipmonde='mplayer http://direct.fipradio.fr/live/fip-webradio4.mp3'
 alias fip='mplayer http://direct.fipradio.fr/live/fip-midfi.mp3'
 alias fiprock='mplayer http://direct.fipradio.fr/live/fip-webradio1.mp3'
+alias underground80='mplayer http://ice1.somafm.com/u80s-128-aac'
 
 cowsay $(fortune)
