@@ -1,0 +1,16 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"font_face": "Inconsolata",
+	"font_size": 10,
+	"highlight_line": true,
+	"highlight_modified_tab": true,
+	"ignored_packages":
+	[
+		"Solarized Color Scheme",
+		"Theme - Spacegray",
+		"Vintage"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"word_wrap": true
+}
