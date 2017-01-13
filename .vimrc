@@ -46,3 +46,8 @@ set softtabstop=4
 set expandtab
 
 set backspace=indent,eol,start
+
+" syntax enable
+set background=dark
+" let g:solarized_termcolors=256
+colorscheme solarized
