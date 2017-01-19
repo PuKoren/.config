@@ -1,0 +1,3 @@
+XTerm*VT100.Translations:       #override\n\
+ Shift Ctrl <KeyPress> v: insert-selection(CLIPBOARD)\n\
+ Shift Ctrl <KeyPress> c: copy-selection(CLIPBOARD)\n
