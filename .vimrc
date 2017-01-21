@@ -29,12 +29,14 @@ set hlsearch
 " When opening a new line and no filetype-specific indenting is enabled, keep
 " the same indent as the line you're currently on. Useful for READMEs, etc.
 set autoindent
+" Toggle paste mode ON/OFF to be allowed to paste text without line indent
+set pastetoggle=<F2>
 
 " Use visual bell instead of beeping when doing something wrong
 set visualbell
 
 " Enable use of the mouse for all modes
-set mouse=a
+" set mouse=a
 
 " Display line numbers on the left
 set number
