@@ -26,4 +26,9 @@ alias metaldetector='mplayer http://ice1.somafm.com/metal-128-aac'
 alias leftcoast='mplayer http://ice1.somafm.com/seventies-128-aac'
 alias deepspaceone='mplayer http://ice1.somafm.com/deepspaceone-128-aac'
 
+alias start_redis='docker run --rm --name redis -it -p 6379:6379 redis:alpine'
+alias start_mariadb='docker run --rm --name mariadb -it -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=cubyn -v ~/dev/data/mariadb:/var/lib/mysql -p 3306:3306 mariadb:latest'
+alias start_postgres='docker run --rm --name postgres -it -e POSTGRES_DB=cubyn.labels -v ~/dev/data/postgres:/var/lib/postgresql/data -p 5432:5432 postgres:alpine'
+alias start_elastic='docker run --rm --name elastic -it -v ~/dev/data/elasticsearch:/var/lib/elasticsearch -p 9200:9200 -p 9300:9300 elasticsearch:2-alpine'
+
 cowsay $(fortune)
