@@ -1,9 +1,9 @@
 [credential]
 	helper = cache --timeout=360000
 [user]
-	email = jmuller@dial-once.com
+	email = jonathan@cubyn.com
 	name = Jonathan Muller
-	signingkey = BD34699C96B53B07
+	signingkey = A42231FCB02D5502E440358B42712D90FBC1A22E
 [core]
 	editor = vim
 [push]
@@ -41,7 +41,7 @@
     prune = "git branch --merged | grep -v \\* | xargs -n 1 git branch -d"
 
 [commit]
-	gpgsign = false
+	gpgsign = true
 [tag]
 	gpgsign = true
 [gpg]
