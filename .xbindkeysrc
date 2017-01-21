@@ -1,0 +1,21 @@
+### USER CONFIGURATION
+
+# Increase volume
+"pamixer --increase 5"
+   XF86AudioRaiseVolume
+
+# Decrease volume
+"pamixer --decrease 5"
+   XF86AudioLowerVolume
+
+# Toggle mute
+"pamixer -t"
+   XF86AudioMute
+
+# Increment backlight
+"xbacklight -inc 10"
+   XF86MonBrightnessUp
+
+# Decrement backlight
+"xbacklight -dec 5"
+   XF86MonBrightnessDown
