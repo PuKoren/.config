@@ -13,3 +13,13 @@ dev
 .bash_history
 .Xauthority
 .config/sublime-text-3
+.babel.json
+.wine
+.steampid
+.steampath
+.steam
+.mozilla
+.gnupg
+.nv
+.pulse-cookie
+.esd_auth
