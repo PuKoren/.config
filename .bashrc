@@ -31,4 +31,11 @@ alias start_mariadb='docker run --rm --name mariadb -it -e MYSQL_ROOT_PASSWORD=r
 alias start_postgres='docker run --rm --name postgres -it -e POSTGRES_DB=cubyn.labels -v ~/dev/data/postgres:/var/lib/postgresql/data -p 5432:5432 postgres:alpine'
 alias start_elastic='docker run --rm --name elastic -it -v ~/dev/data/elasticsearch:/var/lib/elasticsearch -p 9200:9200 -p 9300:9300 elasticsearch:2-alpine'
 
+#curl tools
+curl_upload() {
+    curl --progress-bar --upload-file $1 "https://transfer.sh/$1"
+}
+
+eval $(thefuck --alias)
+
 cowsay $(fortune)
