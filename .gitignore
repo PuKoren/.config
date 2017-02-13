@@ -47,3 +47,12 @@ dev
 Downloads
 node_modules
 screenshots
+.config/GitKraken/
+.config/Postman/
+.docker/
+.gitkraken/
+.rediscli_history
+.v8flags.5.1.281.89.koren.json
+.wcalc_history
+win32/
+
