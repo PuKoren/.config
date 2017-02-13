@@ -1,7 +1,27 @@
 {
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"node_modules/**",
+		"bower_components/**",
+		"tmp/**",
+		"dist/**"
+	],
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"font_face": "DejaVu Sans Mono",
-	"font_size": 10,
+	"font_size": 9,
 	"highlight_line": true,
 	"highlight_modified_tab": true,
 	"ignored_packages":
@@ -10,27 +30,29 @@
 		"Theme - Spacegray",
 		"Vintage"
 	],
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
-	"tab_size": 4,
-	"translate_tabs_to_spaces": true,
-	"word_wrap": true,
-	"binary_file_patterns": [
-		"*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf",
-		"*.tga", "*.dds", "*.ico", "*.eot", "*.pdf",
-		"*.swf", "*.jar", "*.zip",
+	"index_exclude_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
 		"node_modules/**",
 		"bower_components/**",
 		"tmp/**",
 		"dist/**"
 	],
-	"index_exclude_patterns": [
-		"*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf",
-		"*.tga", "*.dds", "*.ico", "*.eot", "*.pdf",
-		"*.swf", "*.jar", "*.zip",
-		"node_modules/**",
-		"bower_components/**",
-		"tmp/**",
-		"dist/**"	
-	]
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
 }
