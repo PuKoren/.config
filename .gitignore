@@ -56,3 +56,4 @@ screenshots
 .wcalc_history
 win32/
 
+.config/dconf/
