@@ -303,7 +303,7 @@ local volumewidget = wibox.container.margin(volumebg, 2, 7, 4, 4)
 
 -- Weather
 local myweather = lain.widgets.weather({
-    city_id = 123456 -- placeholder
+    city_id = 2988507 -- paris
 })
 
 -- Separators
