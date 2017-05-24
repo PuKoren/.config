@@ -3,7 +3,6 @@
 [user]
 	email = jonathan@cubyn.com
 	name = Jonathan Muller
-	signingkey = A42231FCB02D5502E440358B42712D90FBC1A22E
 [core]
 	editor = vim
 [push]
@@ -41,7 +40,7 @@
     prune = "git branch --merged | grep -v \\* | xargs -n 1 git branch -d"
 
 [commit]
-	gpgsign = true
+	gpgsign = false
 [tag]
 	gpgsign = true
 [gpg]

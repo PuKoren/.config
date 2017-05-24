@@ -199,54 +199,6 @@ local mpdwidget = lain.widgets.mpd({
     end
 })
 
--- Battery
-local baticon = wibox.widget.imagebox(beautiful.bat)
-local batbar = wibox.widget {
-    forced_height    = 1,
-    forced_width     = 59,
-    color            = beautiful.fg_normal,
-    background_color = beautiful.bg_normal,
-    margins          = 1,
-    paddings         = 1,
-    ticks            = true,
-    ticks_size       = 6,
-    widget           = wibox.widget.progressbar,
-}
-local batupd = lain.widgets.bat({
-    settings = function()
-        if bat_now.status == "N/A" or type(bat_now.perc) ~= "number" then return end
-
-        if bat_now.status == "Charging" then
-            baticon:set_image(beautiful.ac)
-            if bat_now.perc >= 98 then
-                batbar:set_color(green)
-            elseif bat_now.perc > 50 then
-                batbar:set_color(beautiful.fg_normal)
-            elseif bat_now.perc > 15 then
-                batbar:set_color(beautiful.fg_normal)
-            else
-                batbar:set_color(red)
-            end
-        else
-            if bat_now.perc >= 98 then
-                batbar:set_color(green)
-            elseif bat_now.perc > 50 then
-                batbar:set_color(beautiful.fg_normal)
-                baticon:set_image(beautiful.bat)
-            elseif bat_now.perc > 15 then
-                batbar:set_color(beautiful.fg_normal)
-                baticon:set_image(beautiful.bat_low)
-            else
-                batbar:set_color(red)
-                baticon:set_image(beautiful.bat_no)
-            end
-        end
-        batbar:set_value(bat_now.perc / 100)
-    end
-})
-local batbg = wibox.container.background(batbar, "#474747", shape.rectangle)
-local batwidget = wibox.container.margin(batbg, 2, 7, 4, 4)
-
 -- /home fs
 local fsicon = wibox.widget.imagebox(beautiful.disk)
 local fsbar = wibox.widget {
@@ -261,7 +213,7 @@ local fsbar = wibox.widget {
     widget           = wibox.widget.progressbar,
 }
 local fshome = lain.widgets.fs({
-    partition = "/home",
+    partition = "/",
     options = "--exclude-type=tmpfs",
     notification_preset = { fg = beautiful.fg_normal, bg = beautiful.bg_normal, font = "Tamsyn 10.5" },
     settings  = function()
@@ -418,8 +370,6 @@ awful.screen.connect_for_each_screen(function(s)
             --mailwidget,
             mpdicon,
             mpdwidget,
-            baticon,
-            batwidget,
             bar_spr,
             fsicon,
             fswidget,
