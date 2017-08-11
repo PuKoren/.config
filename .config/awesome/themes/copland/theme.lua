@@ -9,7 +9,7 @@
 local theme                                     = {}
 
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/copland"
-theme.wallpaper                                 = theme.dir .. "/wall.png"
+theme.wallpaper                                 = theme.dir .. "/pony.jpg"
 
 theme.font                                      = "Tamzen 10.5"
 theme.fg_normal                                 = "#BBBBBB"

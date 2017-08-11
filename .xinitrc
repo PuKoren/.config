@@ -5,4 +5,5 @@
 [ ! -s ~/.config/mpd/pid ] && mpd
 xbindkeys
 syndaemon -i 0.2 -t -R -d
+compton -b
 exec awesome
