@@ -67,8 +67,8 @@ local terminal   = "urxvt"
 local editor     = os.getenv("EDITOR") or "nano" or "vi"
 
 -- user defined
-local browser    = "firefox"
-local gui_editor = "gvim"
+local browser    = "chromium"
+local gui_editor = "code"
 local graphics   = "gimp"
 local tagnames   = { "1", "2", "3", "4", "5" }
 

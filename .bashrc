@@ -40,3 +40,9 @@ curl_upload() {
 eval $(thefuck --alias)
 
 cowsay $(fortune)
+
+alias dualscreen="xrandr --output eDP-1 --auto --output HDMI-1 --auto --right-of eDP-1"
+alias dualscreen_left="xrandr --output eDP-1 --auto --output HDMI-1 --auto --left-of eDP-1"
+alias dualscreen_off="xrandr --output HDMI-1 --auto"
+
+alias prepareMergeDiff="git log origin/develop...origin/master --oneline --abbrev-commit --remove-empty --no-merges && git describe --abbrev=0"
