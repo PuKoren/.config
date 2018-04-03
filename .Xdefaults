@@ -90,7 +90,7 @@ URxvt*foreground: #657b83
 URxvt*background: #002b36
 
 # Monaco Linux font
-#URxvt*font: xft:Monaco:pixelsize=11
+URxvt*font: xft:Tamzen:pixelsize=14
 #URxvt.font: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1
 #URxvt*boldFont: xft:Monaco:bold:pixelsize=11
 URxvt*letterSpace: 0
